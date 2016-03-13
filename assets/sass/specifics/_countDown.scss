@@ -1,0 +1,33 @@
+.pp-count-down{
+	height: 117px;
+}
+.pp-count-down__digit{
+	display: inline-block;
+    position: relative;
+    margin-right: 25px;
+    &:after{
+    	content: ":";
+    	font-family: 'lato';
+		font-size: 33px;
+		color: #e62452;
+	    position: absolute;
+	    top: -15px;
+	    right: -18px;
+    }
+    &:last-child{
+    	margin-right: 0;
+    }
+    &:last-child:after{
+    	content: "";
+    }
+}
+.digit{
+	font-family: 'Lato-Bold';
+	font-size: 33px;
+	color: #e62452;
+	white-space: normal;
+}
+.date{
+	font-size: 14px;
+	color: #997e82;
+}

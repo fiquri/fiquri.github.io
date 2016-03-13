@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="" ng-app="fiquri"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <!-- <base href="/"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>rifiu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="all">
+
+
+        <link rel="stylesheet" href="assets/css/main.css" media="all">
+        <script src="assets/libs/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- ionic/angularjs js -->
+        <script src="assets/libs/angular.min.js"></script>
+        <script src="assets/libs/angular-ui-router.min.js"></script>
+        <script src="assets/libs/angular-animate.min.js"></script>
+        <script src="assets/libs/jquery-1.11.2.min.js"></script>
+        <script src="assets/libs/bootstrap.min.js"></script>
+        <script src="assets/libs/moment.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/app.directive.js"></script>
+        <script src="app/components/home/homeController.js"></script>
+        <script src="app/components/portfolio/portfolioController.js"></script>
+        
+    </head>
+    <body ng-init="active='visible'">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      <nav ng-include="'app/shared/nav/nav.html'" class="{{active}}"></nav>
+      <main ui-view id="main" class="animated {{$state.current.name}}"></main>
+
+
+      
+
+        
+        
+        
+        <!--<script src="js/vendor/Chart.min.js"></script>
+        <script src="js/angular/angular-chart.min.js"></script>
+        <script src="js/angular/moment.js"></script>
+        <script src="js/angular/angular-socialshare.min.js"></script>
+        
+        <script src="js/angular/angular-cookies.min.js"></script>
+        <script src="js/vendor/jquery.nanoscroller.min.js"></script>-->
+
+
+
+        
+        <!-- your app's js 
+        
+        
+        <script src="js/angular/api.js"></script>
+        <script src="js/angular/directive.js"></script>
+        <script src="js/angular/service.js"></script>
+        <script src="js/angular/auth.js"></script>
+        <script src="js/angular/controller.js"></script>-->
+
+       
+        <script src="assets/js/main.js"></script>
+      
+      
+    </body>
+</html>

@@ -1,0 +1,133 @@
+/**{
+	font-family: Avenir-Book;
+	color: #2C3E50;
+}*/
+#main{
+	background: rgba(37, 17, 86, .8);
+}
+h2{
+	margin-top: 0;
+}
+.home.ng-enter .fq-main__item{
+	opacity: 0;
+}
+.home.ng-enter.ng-enter-active .fq-main__item{
+	opacity: 1;
+}
+/*.home.ng-leave .fq-main__item{
+	height: 340px;
+}*/
+.portfolio.ng-enter.ng-enter-active .fq-portfolio{
+	/*height: 340px;*/
+}
+/*.portfolio.ng-enter .fq-portfolio{
+	height: 500px;
+}*/
+.home.ng-leave.ng-leave-active .fq-main__item{
+	height: 500px;
+	  animation-delay: 2s;
+}
+body, main, html{
+	height: 100%;
+	background: #fff;
+}
+
+.fq-main{
+	height: 100%;
+	padding-left:235px;
+}
+.item-overlay{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(37, 17, 86, .8);
+}
+.fq-main__item{
+	float: left;
+	width: 100%;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	@include transition(all ease-in .6s .3s);
+	&.active{
+		height: 300px;
+	}
+	&:hover .item-overlay{
+	    background: rgba(37, 17, 86, .4);
+	}
+}
+.fq-portfolio__detail{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.fq-detail{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	.fq-portfolio{
+		width: 100%;
+		height: 340px;
+		@include transition(all ease-in .6s);
+		&.active{
+			height: 500px;
+		}
+	}
+}
+
+.fq-portfolio{
+	height: 100%;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.rf-title{
+	text-align: center;
+	color: #fff;
+}
+.rf-more{
+	float: right;
+}
+.fq-back{
+	position: fixed;
+	top: 0;
+	left: 235px;
+	@include transition(all ease-in .6s .3s);
+}
+.fq-back__btn{
+	border-radius: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    &:before {
+	    content: "\f060";
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+}
+.portfolio.ng-leave .fq-portfolio{
+	opacity: 1;
+}
+.portfolio.ng-leave.ng-leave-active .fq-portfolio{
+	height: 340px;
+	opacity: 0;
+}
+.portfolio.ng-leave.ng-leave-active .fq-back{
+	left: 193px;
+}
+.portfolio.ng-enter .fq-back{
+	left: 193px;
+}
+.portfolio.ng-enter.ng-enter-active .fq-back{
+	left: 235px;
+}
