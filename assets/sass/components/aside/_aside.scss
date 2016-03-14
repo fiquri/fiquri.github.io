@@ -42,13 +42,17 @@ nav{
 		visibility: visible;
     	opacity: 1;
 	}
-	img{
+	.fq-avatar__circle{
 		width: 123px;
 		height: 123px;
-		padding: 2px;
 		background-color: #a281e4;
 		border-radius: 50%;
+		margin: auto;
 		margin-bottom: 20px;
+		overflow: hidden;
+		img{
+			width: 100%;
+		}
 	}
 	figcaption{
 		font-family: Lato-Bold;
@@ -69,6 +73,7 @@ nav{
 	height: 7px;
     border-radius: 6px;
     background-color: #fdff25;
+    margin-bottom: 10px;
 }
 .fq-contact{
 	text-align: center;

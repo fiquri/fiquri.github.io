@@ -1,0 +1,111 @@
+[  
+   {  
+      "postId":1,
+      "banner":"project1.jpg",
+      "title":"Lapas Cikarang",
+      "industry" : "Company Site",
+      "dateCreated": "March 2015",
+      "MockSite" : "http://lapas.bitballoon.com",
+      "site" : "http://www.lapascikarang.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : true
+   },
+   {  
+      "postId":2,
+      "banner":"project2.jpg",
+      "title":"Alexandrugolub",
+      "industry" : "Personal Site",
+      "dateCreated": "April 2015",
+      "MockSite" : "http://alexgolub.bitballoon.com",
+      "site" : "http://www.Alexandrugolub.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : true
+   },
+   {  
+      "postId":3,
+      "banner":"project3.jpg",
+      "title":"Ushuu",
+      "industry" : "Company Site, Crowd Funding",
+      "dateCreated": "June 2015",
+      "MockSite" : "http://ushuu.bitballoon.com",
+      "site" : "http://www.ushuu.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":4,
+      "banner":"project4.jpg",
+      "title":"AudioSlang",
+      "industry" : "Company Site",
+      "dateCreated": "July 2015",
+      "MockSite" : "http://AudioSlang.bitballoon.com",
+      "site" : "http://www.AudioSlang.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":5,
+      "banner":"project5.jpg",
+      "title":"Selaksa Imaji",
+      "industry" : "Company Site, E-Commerce",
+      "dateCreated": "July 2015",
+      "MockSite" : "http://selaksaimaji.bitballoon.com",
+      "site" : "http://www.selaksaimaji.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":6,
+      "banner":"project6.jpg",
+      "title":"Ammossi",
+      "industry" : "E-Commerce",
+      "dateCreated": "September 2015",
+      "MockSite" : "http://www.ammossi.com",
+      "site" : "http://www.ammossi.com",
+      "status" : "published",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":7,
+      "banner":"project7.jpg",
+      "title":"Helia Fashion",
+      "industry" : "Personal Site, Free Template",
+      "dateCreated": "October 2015",
+      "MockSite" : "http://helia.selaksaimaji.com/healia-fashion",
+      "site" : "http://helia.selaksaimaji.com/healia-fashion",
+      "status" : "Comming Soon",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":8,
+      "banner":"project8.jpg",
+      "title":"Helia Band",
+      "industry" : "Personal Site, Free Template",
+      "dateCreated": "November 2015",
+      "MockSite" : "http://helia.selaksaimaji.com/helia-fashion",
+      "site" : "http://helia.selaksaimaji.com/helia-fashion",
+      "status" : "Comming Soon",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   },
+   {  
+      "postId":9,
+      "banner":"project9.jpg",
+      "title":"Helia Landing Page",
+      "industry" : "Personal Site, Free Template, Landing Page",
+      "dateCreated": "November 2015",
+      "MockSite" : "http://helia.selaksaimaji.com/helia-coming-soon/index-video.html",
+      "site" : "http://helia.selaksaimaji.com/helia-coming-soon/index-video.html",
+      "status" : "Comming Soon",
+      "technology" : "Html, css, jquery",
+      "changed" : false
+   }
+   
+]

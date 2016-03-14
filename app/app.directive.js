@@ -46,7 +46,7 @@ app.directive('countUp', ['$compile',function($compile,$timeout) {
         restrict: 'E',
         replace: false,
         scope: {
-            countTo: "=countTo",
+            countTo: "@countTo",
             interval: '=interval',
             nameSkill: "@nameSkill"
         },

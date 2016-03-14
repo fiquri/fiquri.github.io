@@ -1,21 +1,26 @@
-<div class="fq-main">
+<div class="fq-main" ng-controller="portfolioController">
   <div class="fq-detail">
-    <!-- <div class="item-overlay"></div> -->
     <figure class="fq-portfolio" portfolio>
-      <img ng-src="assets/img/img1.png" class="active" alt="project">
+      <img ng-src="assets/img/{{portDatas.banner}}" class="active" alt="{{portDatas.title}}">
     </figure>
     <div class="rf-title">
-      <h1>SELAKSA IMAJI</h1>
-      <span>Created on july '15</span><br>
-      <i>Ecommerce, Startup web</i><br>
-      <p><a href="http://selaksaimaji.com">live website</a></p>
-      <a ui-sref="portfolio({id:2})">adsd</a>
+      <h1>{{portDatas.title}}</h1>
+      <span>Created on {{portDatas.dateCreated}}</span><br>
+      <i>{{portDatas.industry}}</i><br>
+      <p ng-class="portDatas.changed? 'stroke':''"><a href="{{portDatas.site}}">live website</a></p>
+      <p ng-show="portDatas.changed"><a href="{{portDatas.MockSite}}">Mock up website</a></p>
+      <div class="fq-prev" ng-if="$stateParams.id > 1">
+        <a ui-sref="portfolio({id: ($stateParams.id-1)})"><div class="fq-prev__btn btn"></div></a>
+      </div>
+      <div class="fq-next" ng-if="portDatasAll.length> $stateParams.id">
+        <a ui-sref="portfolio({id: (1++$stateParams.id)})"><div class="fq-next__btn btn"></div></a>
+      </div>
     </div>
   </div>
 </div>
 <div class="fq-back">
-<a ui-sref="home" back>
-  <div class="fq-back__btn btn">
-  </div>
-</a>
+  <a ui-sref="home" back>
+    <div class="fq-back__btn btn">
+    </div>
+  </a>
 </div>

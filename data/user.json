@@ -1,0 +1,35 @@
+[  
+   {  
+      "id":1,
+      "name":"Fiqri Natariadhi Hidayat",
+      "title":"Front End Enthusiasm",
+      "email":"fiqrinatariadhi@gmail.com",
+      "avatar":"fiqri.jpg",
+      "skill":[  
+         {  
+            "name":"Html",
+            "point":90
+         },
+         {  
+            "name":"Css",
+            "point":90
+         },
+         {  
+            "name":"Jquery",
+            "point":70
+         },
+         {  
+            "name":"AngularJs",
+            "point":70
+         },
+         {  
+            "name":"Design",
+            "point":70
+         },
+         {  
+            "name":"Php",
+            "point":60
+         }
+      ]
+   }
+]

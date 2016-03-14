@@ -2,11 +2,14 @@
 	font-family: Avenir-Book;
 	color: #2C3E50;
 }*/
-#main{
+html, #main{
 	background: rgba(37, 17, 86, .8);
 }
 h2{
 	margin-top: 0;
+}
+.stroke{
+	text-decoration: line-through;
 }
 .home.ng-enter .fq-main__item{
 	opacity: 0;
@@ -28,8 +31,7 @@ h2{
 	  animation-delay: 2s;
 }
 body, main, html{
-	height: 100%;
-	background: #fff;
+	min-height: 100%;
 }
 
 .fq-main{
@@ -90,6 +92,7 @@ body, main, html{
 .rf-title{
 	text-align: center;
 	color: #fff;
+	p{display: inline-block;}
 }
 .rf-more{
 	float: right;
@@ -112,7 +115,7 @@ body, main, html{
 	    position: absolute;
 	    top: 50%;
 	    left: 50%;
-	    transform: translate(-50%, -50%);
+	    @include transform(translate(-50%, -50%));
 	}
 }
 .portfolio.ng-leave .fq-portfolio{
@@ -130,4 +133,45 @@ body, main, html{
 }
 .portfolio.ng-enter.ng-enter-active .fq-back{
 	left: 235px;
+}
+.fq-next{
+	position: fixed;
+    right: 80px;
+    top: 45%;
+    opacity: 1;
+	@include transition(all ease-in .6s .3s);
+}
+.fq-prev{
+	position: fixed;
+    right: 80px;
+    top: 55%;
+    opacity: 1;
+	@include transition(all ease-in .6s .3s);
+}
+.fq-next__btn, .fq-prev__btn{
+	border-radius: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    &:before {
+	    content: "\f062";
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    @include transform(translate(-50%, -50%));
+	}
+}
+.fq-prev__btn:before {
+    content: "\f063";
+}
+.portfolio.ng-leave.ng-leave-active .fq-prev, .portfolio.ng-leave.ng-leave-active .fq-next{
+	opacity: 0;
+}
+.portfolio.ng-enter .fq-prev, .portfolio.ng-enter .fq-next{
+	opacity: 0;
+}
+.portfolio.ng-enter.ng-enter-active .fq-prev, .portfolio.ng-enter.ng-enter-active .fq-next{
+	opacity: 1;
 }

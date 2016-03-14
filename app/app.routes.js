@@ -9,7 +9,7 @@ function($stateProvider, $urlRouterProvider) {
       templateUrl: $defaultView+'home/home.html'
     })
     .state('portfolio',{
-      url: "/p:id",
+      url: "/p/:id",
       reloadOnSearch: false,
       templateUrl: $defaultView+'portfolio/portfolio.html'
     })
@@ -17,6 +17,7 @@ function($stateProvider, $urlRouterProvider) {
     
     
 }])
-.run(['$rootScope', '$state',function ($rootScope, $state) {
+.run(['$rootScope', '$state', '$stateParams',function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
+    $rootScope.$stateParams  = $stateParams ;
 }]);
