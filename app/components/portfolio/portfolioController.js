@@ -5,5 +5,6 @@ angular.module('fiquri')
   	.success(function (response) {
       $scope.portDatas = response[id];
       $scope.portDatasAll = response;
+      $rootScope.headTitle = response[id].title;
     });
 });
