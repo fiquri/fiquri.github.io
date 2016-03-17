@@ -38,7 +38,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <nav ng-include="'app/shared/nav/nav.html'" class="{{active}}" ng-controller="navController"></nav>
+      <nav ng-include="'app/shared/nav/nav.html'" class="{{active}} {{'nav-'+$state.current.name}}" ng-controller="navController"></nav>
       <main ui-view id="main" class="animated {{$state.current.name}}"></main>
       
     </body>

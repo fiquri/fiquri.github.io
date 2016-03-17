@@ -8,6 +8,10 @@ html, #main{
 h2{
 	margin-top: 0;
 }
+a{
+	color: #fff;
+	text-decoration: underline;
+}
 .stroke{
 	text-decoration: line-through;
 }
@@ -17,15 +21,7 @@ h2{
 .home.ng-enter.ng-enter-active .fq-main__item{
 	opacity: 1;
 }
-/*.home.ng-leave .fq-main__item{
-	height: 340px;
-}*/
-.portfolio.ng-enter.ng-enter-active .fq-portfolio{
-	/*height: 340px;*/
-}
-/*.portfolio.ng-enter .fq-portfolio{
-	height: 500px;
-}*/
+
 .home.ng-leave.ng-leave-active .fq-main__item{
 	height: 500px;
 	  animation-delay: 2s;
@@ -45,6 +41,9 @@ body, main, html{
     left: 0;
     right: 0;
     background: rgba(37, 17, 86, .8);
+    &.hover{
+    	background: rgba(37, 17, 86, .4);
+    }
 }
 .fq-main__item{
 	float: left;
@@ -74,13 +73,17 @@ body, main, html{
 	.fq-portfolio{
 		width: 100%;
 		height: 340px;
+		margin-bottom: 20px;
+		position:relative;
 		@include transition(all ease-in .6s);
 		&.active{
 			height: 500px;
 		}
 	}
 }
-
+.rf-note{
+	display: block;
+}
 .fq-portfolio{
 	height: 100%;
 	img{
@@ -121,32 +124,32 @@ body, main, html{
 .portfolio.ng-leave .fq-portfolio{
 	opacity: 1;
 }
-.portfolio.ng-leave.ng-leave-active .fq-portfolio{
-	height: 340px;
-	opacity: 0;
+@media only screen and (min-width: 788px){
+	.portfolio.ng-leave.ng-leave-active .fq-portfolio{
+		height: 340px;
+		opacity: 0;
+	}
+	.portfolio.ng-leave.ng-leave-active .fq-back{
+		left: 193px;
+	}
+	.portfolio.ng-enter .fq-back{
+		left: 193px;
+	}
+	.portfolio.ng-enter.ng-enter-active .fq-back{
+		left: 235px;
+	}
 }
-.portfolio.ng-leave.ng-leave-active .fq-back{
-	left: 193px;
-}
-.portfolio.ng-enter .fq-back{
-	left: 193px;
-}
-.portfolio.ng-enter.ng-enter-active .fq-back{
-	left: 235px;
+.fq-next, .fq-prev{
+	position: fixed;
+    right: 80px;
+    opacity: 1;
+	@include transition(all ease-in .6s .3s);
 }
 .fq-next{
-	position: fixed;
-    right: 80px;
     top: 45%;
-    opacity: 1;
-	@include transition(all ease-in .6s .3s);
 }
 .fq-prev{
-	position: fixed;
-    right: 80px;
     top: 55%;
-    opacity: 1;
-	@include transition(all ease-in .6s .3s);
 }
 .fq-next__btn, .fq-prev__btn{
 	border-radius: 0;
@@ -169,7 +172,10 @@ body, main, html{
 .portfolio.ng-leave.ng-leave-active .fq-prev, .portfolio.ng-leave.ng-leave-active .fq-next{
 	opacity: 0;
 }
-.portfolio.ng-enter .fq-prev, .portfolio.ng-enter .fq-next{
+.portfolio.ng-enter .fq-prev{
+	opacity: 0;
+}
+.portfolio.ng-enter .fq-next {
 	opacity: 0;
 }
 .portfolio.ng-enter.ng-enter-active .fq-prev, .portfolio.ng-enter.ng-enter-active .fq-next{

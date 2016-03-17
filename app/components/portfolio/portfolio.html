@@ -1,12 +1,19 @@
 <div class="fq-main" ng-controller="portfolioController">
   <div class="fq-detail">
+
     <figure class="fq-portfolio" portfolio>
+    <div class="item-overlay hover"></div>
       <img ng-src="assets/img/{{portDatas.banner}}" class="active" alt="{{portDatas.title}}">
+      <figcaption class="fq-portfolio__detail">
+        <div class="rf-title">
+          <h1>{{portDatas.title}}</h1>
+            <span>Created on {{portDatas.dateCreated}}</span>
+        </div>
+      </figcaption>
     </figure>
     <div class="rf-title">
-      <h1>{{portDatas.title}}</h1>
-      <span>Created on {{portDatas.dateCreated}}</span><br>
       <i>{{portDatas.industry}}</i><br>
+      <span class="rf-note"ng-if="portDatas.status=='Coming Soon'">Note : Coming Soon</span>
       <p ng-class="portDatas.changed? 'stroke':''"><a href="{{portDatas.site}}">live website</a></p>
       <p ng-show="portDatas.changed"><a href="{{portDatas.MockSite}}">Mock up website</a></p>
       <div class="fq-prev" ng-if="$stateParams.id > 1">
