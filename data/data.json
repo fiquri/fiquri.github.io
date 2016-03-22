@@ -106,6 +106,18 @@
       "status" : "Coming Soon",
       "technology" : "Html, css, jquery",
       "changed" : false
+   },
+   {  
+      "postId":10,
+      "banner":"project10.jpg",
+      "title":"Laundry Mobile App",
+      "industry" : "StartUp App, MockUp",
+      "dateCreated": "March 2016",
+      "MockSite" : "http://fiquri.github.io/laundryApp/www/",
+      "site" : "http://fiquri.github.io/laundryApp/www/",
+      "status" : "Coming Soon",
+      "technology" : "Html, css, jquery, Angular Js, Ionic",
+      "changed" : false
    }
    
 ]
