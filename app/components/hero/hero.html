@@ -1,0 +1,31 @@
+<!-- background look like TV -->
+  <div class="fq-hero--overlay"></div>
+  <div class="fq-typed-strings" ng-if="detectmob()">
+    <p>Welcome to My Website</p>
+    <p>You can taste</p>
+    <p>my project with <br>popular ingredient</p>
+    <p>Such As</p>
+    <p>IonicFramework</p> 
+    <p>Angular.js</p>
+    <p>Jquery</p>
+    <p>So, enjoy!!</p>
+  </div>
+  <div class="fq-typed-strings" ng-if="!detectmob()">
+    <p>Welcome to</p>
+    <p>My Website</p>
+    <p>You can<br>taste</p>
+    <p>my project<br>with</p>
+    <p>popular<br>ingredient</p>
+    <p>Such As</p>
+    <p>Ionic</p> 
+    <p>Angular.js</p>
+    <p>Jquery</p>
+    <p>So, enjoy!!</p>
+  </div>
+  <div class="fq-center">
+    <!-- using typed.js -->
+    <span class="fq-typed" typed></span>
+  </div>
+  
+  <!-- visible after get callback from typed.js -->
+  <a href="#" class="fq-center fq-start"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>

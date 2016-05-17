@@ -23,22 +23,30 @@
         <script src="assets/libs/angular-ui-router.min.js"></script>
         <script src="assets/libs/angular-animate.min.js"></script>
         <script src="assets/libs/jquery-1.11.2.min.js"></script>
+       
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="assets/libs/MorphSVGPlugin.min.js"></script>
+        <script type="text/javascript">
+            MorphSVGPlugin.convertToPath("circle, rect, polygon");
+        </script>
+
         <script src="assets/libs/bootstrap.min.js"></script>
         <script src="assets/libs/moment.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <script src="assets/libs/masonry.pkgd.min.js"></script>
+        <script src="assets/libs/jquery.nanoscroller.min.js"></script>
+
+        <script src="assets/libs/typed.js" type="text/javascript"></script>
         <script src="app/app.module.js"></script>
         <script src="app/app.routes.js"></script>
         <script src="app/app.directive.js"></script>
         <script src="app/components/home/homeController.js"></script>
-        <script src="app/components/portfolio/portfolioController.js"></script>
-        <script src="app/shared/nav/navController.js"></script>
+        <script src="app/components/dishes/projectController.js"></script>
         
     </head>
     <body ng-init="active='visible'">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <nav ng-include="'app/shared/nav/nav.html'" class="{{active}} {{'nav-'+$state.current.name}}" ng-controller="navController"></nav>
       <main ui-view id="main" class="animated {{$state.current.name}}"></main>
       
     </body>

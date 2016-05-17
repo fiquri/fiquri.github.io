@@ -6,12 +6,8 @@ function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home',{
       url: "/",
-      templateUrl: $defaultView+'home/home.html'
-    })
-    .state('portfolio',{
-      url: "/p/:id",
-      reloadOnSearch: false,
-      templateUrl: $defaultView+'portfolio/portfolio.html'
+      templateUrl: $defaultView+'home/home.html',
+      controller : "projectController"
     })
     
     

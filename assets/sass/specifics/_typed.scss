@@ -1,0 +1,57 @@
+/* code for animated blinking cursor */
+.typed-cursor{
+    opacity: 1;
+    font-size: 32px;
+    color: #fff;
+    margin-left: 10px;
+    font-family: "Fipps-Regular";
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+.fq-typed{
+    white-space:pre;
+    color: #fff;
+    width: auto;
+    max-width: 80%;
+    font-size: 62px;
+    font-family: "Fipps-Regular";
+}
+.fq-start{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 90px;
+    left: 43%;
+    font-size: 84px;
+    color: #fff;
+  @include transition(all ease-in .3s);
+  &.visible{
+    opacity: 1;
+    visibility: visible;
+    @include all(transition-delay, .3s);
+    @include animation(bounce 2s infinite);
+  }
+  &:hover{
+    color: #fff;
+  }
+    
+}
+@include keyframes(bounce) {
+  0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+  40% {
+    @include transform(translateY(-30px));
+  }
+  60% {
+    @include transform (translateY(-15px));
+  }
+}
+
+@include keyframes(blink) {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

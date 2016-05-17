@@ -1,0 +1,26 @@
+	<div class="container">
+		<div class="fq-dishes">
+			<div masonry>
+				<div class="fq-dishes--item" ng-repeat="data in items | orderBy:postId:true">
+					<div class="fq-overlay"></div>
+					<div class="fq-site">
+						<div class="fq-site__overlay">
+							<a href="{{data.site}}" class="fq-word-bg " ng-show="{{data.status}}"><span>Site</span></a>
+							<a href="{{data.MockSite}}" class="fq-word-bg" ng-show="{{data.MockSite !=NULL}}"><span>Mock up site</span></a>
+						</div>
+					</div>
+					<img ng-src="assets/img/{{data.banner}}" class="fq-dishes__img">
+					<div class="fq-tag">
+						<h6 class="fq-word-bg"><span>{{data.technology}}</span></h4><br>
+					</div>
+					<fiqcaption class="fq-dishes__caption">
+						
+						<h3 class="fq-word-bg"><span>{{data.title}}</span></h3>
+					</fiqcaption>
+					
+				</div>
+				<div class="fq-dishes--gutter"></div>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->

@@ -1,0 +1,40 @@
+/*skill*/
+
+.fq-skill--item{
+  width: calc(100%/6);
+  text-align: center;
+  height: 90px;
+  overflow: hidden;
+  .fq-overlay{
+    z-index: 1;
+  }
+}
+.grid-sizer {
+  width: 25%;
+}
+
+/*skill*/
+.fq-skill__name {
+    font-family: "Fipps-Regular";
+    margin-top: 0;
+    left: 10px;
+    color: white;
+    margin: 0;
+    z-index: 1;
+     font-size: 15px;
+      color: #fff;
+}
+
+.fq-skill__img{
+    height: 50%;
+    position: absolute;
+    right: 0;
+    @include transform(translate(40%));
+}
+.fq-count{
+  font-family: "DsDigital";
+  font-size: 42px;
+  font-style: italic;
+  margin: 0;
+  color: #FFFF0F;
+}

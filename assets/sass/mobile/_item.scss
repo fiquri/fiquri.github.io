@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+  .fq-dishes--item {
+    width: 100%;
+        margin-bottom: 5%;
+  }
+  .fq-dishes__img{
+      @include transform(scale(1.1));
+      @include all (filter, grayscale(0%));
+      filter: none;
+  }
+  .fq-site {
+    display: inline;
+    visibility: visible;
+  }
+}

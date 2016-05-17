@@ -1,0 +1,12 @@
+<div class="fq-skill">
+	<div class="container">
+		<div class="fq-dishes">
+			<div masonry-skill>
+				<div class="fq-skill--item" data-ng-repeat="data in info.skill">
+					<count-up count-to="{{data.point}}" interval="20"></count-up>
+					<h3 class="fq-skill__name">{{data.name}}</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,122 @@
+/* code for hero */
+.fq-hero {
+  @include animation (turn-on 4s forwards linear);
+}
+.fq-hero--overlay{
+  background-image: url(../img/common/hero.jpeg);
+  height: 100%;
+  opacity: .6;
+}
+.fq-hero::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  @include animation(flicker 0.15s infinite);
+
+}
+@include keyframes (flicker) {
+  0% {
+    opacity: 0.53318;
+  }
+  5% {
+    opacity: 0.38675;
+  }
+  10% {
+    opacity: 0.0932;
+  }
+  15% {
+    opacity: 0.97994;
+  }
+  20% {
+    opacity: 0.81403;
+  }
+  25% {
+    opacity: 0.97959;
+  }
+  30% {
+    opacity: 0.47269;
+  }
+  35% {
+    opacity: 0.51808;
+  }
+  40% {
+    opacity: 0.44672;
+  }
+  45% {
+    opacity: 0.37544;
+  }
+  50% {
+    opacity: 0.20921;
+  }
+  55% {
+    opacity: 0.53647;
+  }
+  60% {
+    opacity: 0.62882;
+  }
+  65% {
+    opacity: 0.5476;
+  }
+  70% {
+    opacity: 0.48023;
+  }
+  75% {
+    opacity: 0.33628;
+  }
+  80% {
+    opacity: 0.68027;
+  }
+  85% {
+    opacity: 0.16121;
+  }
+  90% {
+    opacity: 0.87493;
+  }
+  95% {
+    opacity: 0.81869;
+  }
+  100% {
+    opacity: 0.35693;
+  }
+}
+
+@include keyframes (turn-on) {
+  0% {
+    @include transform(scale(1, 0.8) translate3d(0, 0, 0));
+    @include all(filter, brightness(30));
+    opacity: 1;
+  }
+  3.5% {
+    @include transform(scale(1, 0.8) translate3d(0, 100%, 0));
+  }
+  3.6% {
+    @include transform(scale(1, 0.8) translate3d(0, -100%, 0));
+    opacity: 1;
+  }
+  9% {
+    @include transform(scale(1.3, 0.6) translate3d(0, 100%, 0));
+    @include all(filter, brightness(30));
+    filter: brightness(30);
+    opacity: 0;
+  }
+  11% {
+    @include transform(scale(1, 1) translate3d(0, 0, 0));
+    @include all(filter, contrast(0) brightness(0));
+    opacity: 0;
+  }
+  100% {
+    @include transform(scale(1, 1) translate3d(0, 0, 0));
+    @include all(filter, contrast(1) brightness(1.2) saturate(1.3));
+    opacity: 1;
+  }
+  
+}
+

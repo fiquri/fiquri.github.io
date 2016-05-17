@@ -1,15 +1,4 @@
-<div class="fq-main" ng-controller="itemController">
-  <div class="fq-main__item" ng-repeat="data in datas | orderBy : '-postId'">
-    <a ui-sref="portfolio({id:data.postId})"><div class="item-overlay"></div>
-    <figure class="fq-portfolio">
-      <img ng-src="assets/img/{{data.banner}}" alt="{{data.title}}">
-      <figcaption class="fq-portfolio__detail">
-        <div class="rf-title">
-          <span>PROJECT {{data.postId}}</span>
-          <h2>{{data.title}}</h2>
-          <span>{{data.technology}}</span>
-        </div>
-      </figcaption>
-    </figure></a>
-  </div>
-</div>
+<div data-ng-include="'app/components/hero/hero.html'" class="fq-container fq-hero"></div>
+<div data-ng-include="'app/components/dishes/dishes.html'" class="fq-section"></div>
+<div data-ng-include="'app/components/skill/skill.html'" class="fq-section--skill"></div>
+<div data-ng-include="'app/components/contact/contact.html'" class="fq-section--contact"></div>

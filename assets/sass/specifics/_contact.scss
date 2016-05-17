@@ -1,0 +1,19 @@
+.fq-contact{
+  padding: 35px 0;
+}
+.fq-info ul{
+  padding: 0;
+}
+.fq-info li{
+      display: inline-block;
+    list-style-type: circle;
+    margin-right: 5px;
+}
+.fq-info li a{
+      color: #333;
+}
+.fq-info li:before {
+    content: "\f111";
+    font-family: fontawesome;
+    margin-right: 5px;
+}
