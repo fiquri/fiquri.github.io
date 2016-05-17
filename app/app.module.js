@@ -19,7 +19,7 @@ app.controller('projectController', function($scope, $http){
 
   	// detecting windows size
     $scope.detectmob= function () {
-	   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+	   if(window.innerWidth <= 480) {
 	     return true;
 	   } else {
 	     return false;
