@@ -9,6 +9,10 @@
 							<a href="{{data.MockSite}}" class="fq-word-bg" ng-show="{{data.MockSite !=NULL}}"><span>Mock up site</span></a>
 						</div>
 					</div>
+					<div class="fq-done">
+						<h6 class="fq-word-bg " ng-show="{{data.status}}"><span>Status : <br>Well Done</span></h6>
+						<h6 class="fq-word-bg" ng-show="{{!data.status}}"><span>Status : <br>Raw</span></h6>
+					</div>
 					<img ng-src="assets/img/{{data.banner}}" class="fq-dishes__img">
 					<div class="fq-tag">
 						<h6 class="fq-word-bg"><span>{{data.technology}}</span></h4><br>

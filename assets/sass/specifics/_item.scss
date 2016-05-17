@@ -34,6 +34,15 @@
   display: none;
   visibility: hidden;
 }
+.fq-done{
+  position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    letter-spacing: 2px;
+    z-index: 9;
+    text-align: left;
+}
 .fq-site__overlay{
   position: absolute;
   top: 50%;
