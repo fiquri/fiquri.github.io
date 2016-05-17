@@ -141,6 +141,7 @@ svg:not(:root) {
 
 .fq-hero--overlay {
   background-image: url(../img/common/hero.jpeg);
+  background-attachment: fixed;
   height: 100%;
   opacity: .6; }
 
@@ -717,7 +718,6 @@ svg:not(:root) {
   visibility: hidden;
   opacity: 0;
   margin-top: 90px;
-  left: 43%;
   font-size: 84px;
   color: #fff;
   -webkit-transition: all ease-in 0.3s;
@@ -873,47 +873,47 @@ svg:not(:root) {
     opacity: 1; } }
 @keyframes flicker {
   0% {
-    opacity: 0.15395; }
+    opacity: 0.77016; }
   5% {
-    opacity: 0.93147; }
+    opacity: 0.25473; }
   10% {
-    opacity: 0.44926; }
+    opacity: 0.24482; }
   15.0% {
-    opacity: 0.9465; }
+    opacity: 0.34559; }
   20% {
-    opacity: 0.27611; }
+    opacity: 0.88485; }
   25% {
-    opacity: 0.23395; }
+    opacity: 0.66668; }
   30.0% {
-    opacity: 0.39299; }
+    opacity: 0.13747; }
   35% {
-    opacity: 0.50925; }
+    opacity: 0.15864; }
   40% {
-    opacity: 0.93818; }
+    opacity: 0.6206; }
   45% {
-    opacity: 0.16246; }
+    opacity: 0.19969; }
   50% {
-    opacity: 0.68496; }
+    opacity: 0.55293; }
   55.0% {
-    opacity: 0.0895; }
+    opacity: 0.74824; }
   60.0% {
-    opacity: 0.27647; }
+    opacity: 0.4338; }
   65% {
-    opacity: 0.88525; }
+    opacity: 0.09927; }
   70% {
-    opacity: 0.65406; }
+    opacity: 0.07487; }
   75% {
-    opacity: 0.36376; }
+    opacity: 0.47101; }
   80% {
-    opacity: 0.90329; }
+    opacity: 0.54801; }
   85.0% {
-    opacity: 0.96187; }
+    opacity: 0.30059; }
   90% {
-    opacity: 0.42127; }
+    opacity: 0.32204; }
   95% {
-    opacity: 0.33788; }
+    opacity: 0.46908; }
   100% {
-    opacity: 0.56913; } }
+    opacity: 0.70285; } }
 @keyframes turn-on {
   0% {
     transform: scale(1, 0.8) translate3d(0, 0, 0);
@@ -1228,50 +1228,53 @@ svg:not(:root) {
 */
 @media screen and (max-width: 480px) {
   .fq-typed {
-    font-size: 32px; } }
+    font-size: 32px; }
+
+  .fq-start {
+    left: 43%; } }
 @keyframes flicker {
   0% {
-    opacity: 0.56745; }
+    opacity: 0.90213; }
   5% {
-    opacity: 0.37784; }
+    opacity: 0.2052; }
   10% {
-    opacity: 0.91228; }
+    opacity: 0.30897; }
   15.0% {
-    opacity: 0.24703; }
+    opacity: 0.76609; }
   20% {
-    opacity: 0.90828; }
+    opacity: 0.53835; }
   25% {
-    opacity: 0.00183; }
+    opacity: 0.14523; }
   30.0% {
-    opacity: 0.27977; }
+    opacity: 0.90282; }
   35% {
-    opacity: 0.65149; }
+    opacity: 0.24355; }
   40% {
-    opacity: 0.52987; }
+    opacity: 0.05583; }
   45% {
-    opacity: 0.95084; }
+    opacity: 0.15997; }
   50% {
-    opacity: 0.58394; }
+    opacity: 0.76417; }
   55.0% {
-    opacity: 0.42401; }
+    opacity: 0.37986; }
   60.0% {
-    opacity: 0.54331; }
+    opacity: 0.01192; }
   65% {
-    opacity: 0.62788; }
+    opacity: 0.22058; }
   70% {
-    opacity: 0.44663; }
+    opacity: 0.27795; }
   75% {
-    opacity: 0.22805; }
+    opacity: 0.56996; }
   80% {
-    opacity: 0.63052; }
+    opacity: 0.08129; }
   85.0% {
-    opacity: 0.57597; }
+    opacity: 0.3662; }
   90% {
-    opacity: 0.5861; }
+    opacity: 0.72841; }
   95% {
-    opacity: 0.72117; }
+    opacity: 0.875; }
   100% {
-    opacity: 0.1032; } }
+    opacity: 0.67776; } }
 @keyframes turn-on {
   0% {
     transform: scale(1, 0.8) translate3d(0, 0, 0);

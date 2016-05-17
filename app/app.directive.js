@@ -56,11 +56,11 @@ app.directive('masonrySkill', function() {
         }
     };
 });
-app.directive('nano', function() {
+app.directive('full', function() {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
-            $(element).nanoScroller();
+            $(element).height($(window).height());
         }
     };
 });
